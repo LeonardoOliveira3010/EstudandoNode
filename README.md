@@ -16,3 +16,6 @@ O Node tem um modulo HTTP por padrão, entretanto esse modulo é bem limitado, u
 # Express
 É um framework minimalista, ou seja é simples de utilizar, feito para ser rapido no quesito de desenvolvimento. 
 Para instalação do express iremos utilizar o npm: npm install express --save
+
+# Rota
+É um caminho para a sua aplicação
