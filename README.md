@@ -18,4 +18,5 @@ O Node tem um modulo HTTP por padrão, entretanto esse modulo é bem limitado, u
 Para instalação do express iremos utilizar o npm: npm install express --save
 
 # Rota
-É um caminho para a sua aplicação
+É um caminho para a sua aplicação ex: www.software.com.br/users, é muito utilizado a função callback, sendo que temos o retorno do disparo dessa função.
+

@@ -15,22 +15,13 @@ app.get("/blog", function(req, res){
 }
 )
 
+app.get("/contato", function(req, res){
+    res.send("Aqui é a tela de contato")
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.get("/ola/:cargo/:nome", function(req, res){ //Quando coloca dois pontos, está crinado um parametro
+    res.send(req.params);
+})
 
 
 
