@@ -26,9 +26,6 @@ app.get("/ola/:cargo/:nome", function(req, res){ //Quando coloca dois pontos, es
 
 
 
-
-
-
 app.listen(3000, function(){
     console.log('servidor rodando na url http://localhost:3000')
 })//criando um servidor com o express, ela deverá ser a ultima linha do código
