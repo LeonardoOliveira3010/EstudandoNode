@@ -20,3 +20,32 @@ Para instalação do express iremos utilizar o npm: npm install express --save
 # Rota
 É um caminho para a sua aplicação ex: www.software.com.br/users, é muito utilizado a função callback, sendo que temos o retorno do disparo dessa função.
 
+# parametro
+Está definindo qual parametro uma determinada função irá ter, o req.send só pode ser utilizado uma única vez
+
+# Nodemon
+
+
+# Arquivo html
+Para utilizar o req junto com o html, temos que usar req.sendFile()
+
+# MySQL
+O MySQL é um banco de dados. Os bancos de dados são definidos por colunas e linhas, em cada coluna é colocado um parametro de informação,como por exemplo nome, email, idade. Nas linhas é mostrado o preenchimento da coluna, ex: coluna nome, linha Leonardo.
+Para criar um banco de dados SQL tem que seguir esses passos:
+ CREATE TABLE usuarios(
+        nome VARCHAR(50),
+        email VARCHAR(100),
+        idade INT
+    )
+Irserção de dados no bd INSERT INTO usuarios(nome, email, idade) VALUES(
+    "Leonardo Oliveira", 
+    "leonardo_oliveira3010@outlook.com", 
+    8
+);
+
+Listar todos os dados da tabela: SELECT * FROM usuarios;
+
+Para especificar uma consulta MYSQL deve se usar a palavra chave where:
+SELECT * FROM usuarios WHERE idade = 8;
+
+Deletar registro da tabela
