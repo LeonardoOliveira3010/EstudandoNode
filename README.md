@@ -30,6 +30,7 @@ Está definindo qual parametro uma determinada função irá ter, o req.send só
 Para utilizar o req junto com o html, temos que usar req.sendFile()
 
 # MySQL
+Para acessar o mysql > mysql -h localhost -u root -p. Para criar um banco de dados no mysql deve se: SHOW DATABASE nome do banco;
 O MySQL é um banco de dados. Os bancos de dados são definidos por colunas e linhas, em cada coluna é colocado um parametro de informação,como por exemplo nome, email, idade. Nas linhas é mostrado o preenchimento da coluna, ex: coluna nome, linha Leonardo.
 Para criar um banco de dados SQL tem que seguir esses passos:
  CREATE TABLE usuarios(
@@ -49,3 +50,9 @@ Para especificar uma consulta MYSQL deve se usar a palavra chave where:
 SELECT * FROM usuarios WHERE idade = 8;
 
 Deletar registro da tabela
+DELETE FROM WHERE nome = ""
+
+Atualizando registro da tabela
+UPDATE usuarios SET nome = "nome de teste", email = "x" WHERE nome = "Julia Pereira";
+
+# SEQUELIZE 
