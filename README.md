@@ -24,7 +24,7 @@ Para instalação do express iremos utilizar o npm: npm install express --save
 Está definindo qual parametro uma determinada função irá ter, o req.send só pode ser utilizado uma única vez
 
 # Nodemon
-
+Automação do servidor utiliza nodemon 'nome.js' e roda o servidor
 
 # Arquivo html
 Para utilizar o req junto com o html, temos que usar req.sendFile()
@@ -32,27 +32,54 @@ Para utilizar o req junto com o html, temos que usar req.sendFile()
 # MySQL
 Para acessar o mysql > mysql -h localhost -u root -p. Para criar um banco de dados no mysql deve se: SHOW DATABASE nome do banco;
 O MySQL é um banco de dados. Os bancos de dados são definidos por colunas e linhas, em cada coluna é colocado um parametro de informação,como por exemplo nome, email, idade. Nas linhas é mostrado o preenchimento da coluna, ex: coluna nome, linha Leonardo.
+
 Para criar um banco de dados SQL tem que seguir esses passos:
- CREATE TABLE usuarios(
+# CREATE TABLE usuarios(
         nome VARCHAR(50),
         email VARCHAR(100),
         idade INT
     )
-Irserção de dados no bd INSERT INTO usuarios(nome, email, idade) VALUES(
+
+# Irserção de dados no banco de dados
+INSERT INTO usuarios(nome, email, idade) VALUES(
     "Leonardo Oliveira", 
     "leonardo_oliveira3010@outlook.com", 
     8
 );
 
-Listar todos os dados da tabela: SELECT * FROM usuarios;
+# Listar todos os dados da tabela: 
+SELECT * FROM usuarios;
 
-Para especificar uma consulta MYSQL deve se usar a palavra chave where:
+# Para especificar uma consulta MYSQL deve se usar a palavra chave where:
 SELECT * FROM usuarios WHERE idade = 8;
 
-Deletar registro da tabela
+# Deletar registro da tabela
 DELETE FROM WHERE nome = ""
 
-Atualizando registro da tabela
+# Atualizando registro da tabela
 UPDATE usuarios SET nome = "nome de teste", email = "x" WHERE nome = "Julia Pereira";
 
 # SEQUELIZE 
+É um  modulo que nos ajuda a trabalhar com o banco de dados mysql. Consegue fazer diversas operações utilizado o Sequelize.
+npm install --save sequelize
+npm install --save mysql2
+
+# MODEL
+Ele é uma referencia da sua tabela dentro do Sequelize
+
+# HANDLEBARS
+É um template engerine do qual nos dá muitas funcionalidades ao html. 
+instalação npm install --save express-handlebars
+
+# Formulario
+Dentro do formulario no html temos o action e o method. O method é a forma como o seu formulario irá ser enviado para o back end. existe duas formas de envio, pelo GET e POST.
+Action > Você informa para qual rota irá definir o method   
+GET > Ele envia os dados pela URL (as vezes não é recomendado)
+POST > Ele não passa os dados pela URL, sendo passado de uma forma diferente.
+
+Quando se trabaçha utilizando o method POST, você precisa alterar o tipo da sua rota, utilizando app.post
+
+# Body Parser
+É um utilitario que serve pra receber qualquer tipo de dado de formulario no express
+    npm install --save body-Parser
+

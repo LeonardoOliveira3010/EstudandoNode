@@ -2,7 +2,7 @@
         nome VARCHAR(50),
         email VARCHAR(100),
         idade INT
-    )
+    );
 
 INSERT INTO usuarios(nome, email, idade) VALUES(
     "Carlos Rodrigues", 
@@ -29,3 +29,6 @@ INSERT INTO usuarios(nome, email, idade) VALUES(
 );
 
 DELETE FROM usuarios WHERE nome = 'Rafael'
+
+UPDATE usuarios SET nome = 'Teste' WHERE nome = 'Leonardo Oliveira'
+
